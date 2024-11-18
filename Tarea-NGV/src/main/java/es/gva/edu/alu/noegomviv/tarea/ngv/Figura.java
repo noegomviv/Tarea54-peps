@@ -10,5 +10,7 @@ package es.gva.edu.alu.noegomviv.tarea.ngv;
  * @author Noelia
  */
 public interface Figura {
-    
+    public double calclularArea();
+    public double calcularPerimetro();
+    //prueba
 }
