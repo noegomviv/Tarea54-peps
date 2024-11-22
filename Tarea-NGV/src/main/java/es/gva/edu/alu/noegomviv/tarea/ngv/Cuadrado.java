@@ -13,7 +13,10 @@ public class Cuadrado implements Figura {
     private int lado;
 
     public Cuadrado(int lado) {
-        this.lado = lado;
+        if (lado <= 0) 
+            lado = 0;
+        else
+           this.lado = lado;
     }
 
     public int getLado() {
@@ -35,6 +38,11 @@ public class Cuadrado implements Figura {
        // throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
    
        return lado*4;
+    }
+
+    @Override
+    public String toString() {
+        return "Cuadrado{" + "lado=" + lado + '}';
     }
     
     

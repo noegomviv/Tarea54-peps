@@ -52,11 +52,9 @@ public class Triangulo implements Figura {
         hipo = Math.sqrt(Math.pow(base, 2) + Math.pow(altura, 2));
         return (base + altura + hipo);
     }
-    
-    
-    
-    
-    
-    
-    
+
+    @Override
+    public String toString() {
+        return "Triangulo{" + "base=" + base + ", altura=" + altura + '}';
+    }
 }
